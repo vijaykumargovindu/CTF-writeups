@@ -124,7 +124,7 @@ so i tried checking for any other function . I found flag function
 
 We have buffer 32  and we have flag function so we can overwite. thats the case if we have flag 
 function also on the main function . But here we have flag function is a different function outside 
-main function. so we need $rip value to overwite so we need to add 8 more bits to our exploit.
+main function. so we need overwite the value of  $rbp   we need to add 8 more bits to our exploit.
 
 ## exploit  
 
