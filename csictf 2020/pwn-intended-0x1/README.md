@@ -15,7 +15,8 @@ $ checksec pwn-intended-0x1
 Anaylsing binary 
 
 gdb-peda$ disass main
-Dump of assembler code for function main:
+
+
    0x0000000000401156 <+0>:	push   rbp
    0x0000000000401157 <+1>:	mov    rbp,rsp
    0x000000000040115a <+4>:	sub    rsp,0x30
@@ -50,7 +51,7 @@ Dump of assembler code for function main:
    0x00000000004011ed <+151>:	mov    eax,0x0
    0x00000000004011f2 <+156>:	leave  
    0x00000000004011f3 <+157>:	ret    
-End of assembler dump.
+
 
 We can see gets function.so try it by giving some input to fill  stack
 
