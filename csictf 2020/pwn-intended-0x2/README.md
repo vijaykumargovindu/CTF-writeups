@@ -1,13 +1,13 @@
 # pwn-intended-0x2
 ## Info 
 
-```$ file pwn-intended-0x2
+```
+$ file pwn-intended-0x2
 pwn-intended-0x2: ELF 64-bit LSB executable, x86-64, version 1 (SYSV), dynamically linked, interpreter
  /lib64/ld-linux-x86-64.so.2, BuildID[sha1]=3fe5fe06984f7093c9122fb1b08fb834a63784d4, 
- for GNU/Linux 3.2.0, not stripped```
-
- ```
- $checksec pwn-intended-0x2
+ for GNU/Linux 3.2.0, not stripped
+ 
+$checksec pwn-intended-0x2
 [*] pwn-intended-0x2'
     Arch:     amd64-64-little
     RELRO:    Partial RELRO
