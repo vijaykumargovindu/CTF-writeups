@@ -4,7 +4,9 @@
 ``` 
 $file pwn-intended-0x1
 
-pwn-intended-0x1: ELF 64-bit LSB executable, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, BuildID[sha1]=1fc0accd801ea951a4ec2f7f8c804e0559ccb1db, for GNU/Linux 3.2.0, not stripped
+pwn-intended-0x1: ELF 64-bit LSB executable, x86-64, version 1 (SYSV), dynamically linked, 
+interpreter /lib64/ld-linux-x86-64.so.2, BuildID[sha1]=1fc0accd801ea951a4ec2f7f8c804e0559ccb1db, 
+for GNU/Linux 3.2.0, not stripped
 
 $ checksec pwn-intended-0x1
 [*] /pwn-intended-0x1'
