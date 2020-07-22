@@ -1,6 +1,7 @@
-      #  pwn-intended-0x1
-##Info
+# pwn-intended-0x1
+## Info
 
+``` bash
 $file pwn-intended-0x1
 
 pwn-intended-0x1: ELF 64-bit LSB executable, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, BuildID[sha1]=1fc0accd801ea951a4ec2f7f8c804e0559ccb1db, for GNU/Linux 3.2.0, not stripped
@@ -12,10 +13,11 @@ $ checksec pwn-intended-0x1
     Stack:    No canary found
     NX:       NX enabled
     PIE:      No PIE (0x400000)
+```
 
-Anaylsing binary 
+## Anaylsing binary 
 
-
+```
 gdb-peda$ disass main
 
 
@@ -53,7 +55,7 @@ gdb-peda$ disass main
    0x00000000004011ed <+151>:	mov    eax,0x0
    0x00000000004011f2 <+156>:	leave  
    0x00000000004011f3 <+157>:	ret    
-
+```
 
 
 We can see gets function.so try it by giving some input to fill  stack
