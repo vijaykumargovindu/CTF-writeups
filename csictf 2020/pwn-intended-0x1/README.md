@@ -1,7 +1,7 @@
 # pwn-intended-0x1
 ## Info
 
-``` bash
+``` 
 $file pwn-intended-0x1
 
 pwn-intended-0x1: ELF 64-bit LSB executable, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, BuildID[sha1]=1fc0accd801ea951a4ec2f7f8c804e0559ccb1db, for GNU/Linux 3.2.0, not stripped
@@ -58,8 +58,9 @@ gdb-peda$ disass main
 ```
 
 
-We can see gets function.so try it by giving some input to fill  stack
 
+We can see gets function.so try it by giving some input to fill  stack
+```
 gdb-peda$ r 
 Starting program: /home/kl4u5/Downloads/pwn-intended-0x1 
 Please pour me some coffee:
@@ -72,6 +73,7 @@ Oh no, you spilled some coffee on the floor! Use the flag to clean it.
 process  is executing new program: /bin/dash
 [New process]
 process  is executing new program: /bin/cat
+```
 
 We can see its a easy bufferoverflow vulnerability.
 
