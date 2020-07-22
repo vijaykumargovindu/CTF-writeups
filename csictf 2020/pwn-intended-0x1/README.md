@@ -1,4 +1,5 @@
-Info
+      #  pwn-intended-0x1
+##Info
 
 $file pwn-intended-0x1
 
@@ -13,7 +14,7 @@ $ checksec pwn-intended-0x1
     PIE:      No PIE (0x400000)
 
 Anaylsing binary 
-//code away
+
 
 gdb-peda$ disass main
 Dump of assembler code for function main:
@@ -52,6 +53,7 @@ Dump of assembler code for function main:
    0x00000000004011f2 <+156>:	leave  
    0x00000000004011f3 <+157>:	ret    
 End of assembler dump.
+
 
 We can see gets function.so try it by giving some input to fill  stack
 
