@@ -13,6 +13,7 @@ $ checksec pwn-intended-0x1
     PIE:      No PIE (0x400000)
 
 Anaylsing binary 
+//code away
 
 gdb-peda$ disass main
 Dump of assembler code for function main:
