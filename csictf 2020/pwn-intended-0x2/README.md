@@ -6,7 +6,7 @@ pwn-intended-0x2: ELF 64-bit LSB executable, x86-64, version 1 (SYSV), dynamical
  /lib64/ld-linux-x86-64.so.2, BuildID[sha1]=3fe5fe06984f7093c9122fb1b08fb834a63784d4, 
  for GNU/Linux 3.2.0, not stripped```
 
- ```bash
+ ```
  $checksec pwn-intended-0x2
 [*] pwn-intended-0x2'
     Arch:     amd64-64-little
@@ -61,7 +61,7 @@ We can see that. there is a comparison at <main+116> so we are going to  use
 this vulnearbility overwite the varible data which is comparing to 0xcafebabe
 so we can easily bypass the check.
 
-
+```
 RAX: 0x0 
 RBX: 0x0 
 RCX: 0x7ffff7af4264 (<__GI___libc_write+20>:	cmp    rax,0xfffffffffffff000)
@@ -101,7 +101,7 @@ EFLAGS: 0xa97 (CARRY PARITY ADJUST zero SIGN trap INTERRUPT direction OVERFLOW)
 [------------------------------------------------------------------------------]
 Legend: code, data, rodata, value
 
-Breakpoint 2, 0x00000000004011f5 in main ()
+Breakpoint 2, 0x00000000004011f5 in main ()```
 
 when i try to fill stack with values. i found it is 44 
 
