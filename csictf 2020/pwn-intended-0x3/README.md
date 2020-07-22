@@ -13,6 +13,8 @@ $ checksec pwn-intended-0x3
     NX:       NX enabled
     PIE:      No PIE (0x400000)
 ```
+
+
 ```
 gdb-peda$ disass main
 Dump of assembler code for function main:
@@ -46,6 +48,7 @@ By analysing the binary we say it is bufferoverflow.but it is a little trickyone
 on  main function.
 
 so i tried checking for any other function . I found flag function 
+
 ```
 	Non-debugging symbols:
 	0x0000000000401000  _init
@@ -66,7 +69,7 @@ so i tried checking for any other function . I found flag function
 	0x0000000000401270  __libc_csu_fini
 	0x0000000000401278  _fini
 
-	disass flag 
+	$ disass flag 
 	Dump of assembler code for function flag:
 	   0x00000000004011ce <+0>:	push   rbp
 	   0x00000000004011cf <+1>:	mov    rbp,rsp
@@ -119,7 +122,7 @@ so i tried checking for any other function . I found flag function
 	Legend: code, data, rodata, value
 	Stopped reason: SIGSEGV
 	0x00000000004011cd in main ()
-    ```
+```
 
 
 We have buffer 32  and we have flag function so we can overwite. thats the case if we have flag 
